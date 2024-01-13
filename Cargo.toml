@@ -1,0 +1,20 @@
+[package]
+name = "libgen-csvify"
+version = "0.1.0"
+edition = "2021"
+default-run = "libgen-csvify"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sqlparser = "0.41.0"
+rayon = "1.8.0"
+csv = "1.2.2"
+env_logger = "0.10.0"
+log = "0.4.20"
+chrono = "0.4.31"
+
+# Default binary
+[[bin]]
+name = "libgen-csvify"
+path = "src/main.rs"
